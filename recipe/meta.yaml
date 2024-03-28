@@ -1,5 +1,5 @@
 {% set name = "phidata" %}
-{% set version = "2.3.62" %}
+{% set version = "2.3.63" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/phidata-{{ version }}.tar.gz
-  sha256: 85bafd2df9ebeb1928538929d32867b6ad28c4c4bb3bf2f879c8c59ec26da4a2
+  sha256: 40ae0db00ac6742595da4a071a25764e02fc734e4ddbbab1de65a0f7ddd63d0c
 
 build:
   entry_points:
     - phi = phi.cli.entrypoint:phi_cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
