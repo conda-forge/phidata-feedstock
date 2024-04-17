@@ -1,5 +1,5 @@
 {% set name = "phidata" %}
-{% set version = "2.3.67" %}
+{% set version = "2.3.68" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/phidata-{{ version }}.tar.gz
-  sha256: 65d8cc961272e438a5c58fcb76c83760a61631fef9567662677d9818faf1897f
+  sha256: 34654cd4fdda11233587754ff2d4429ef60c6114a1db3d6c2f8764e7a3893f3f
 
 build:
   entry_points:
