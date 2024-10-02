@@ -1,5 +1,5 @@
 {% set name = "phidata" %}
-{% set version = "2.4.37" %}
+{% set version = "2.4.38" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/phidata-{{ version }}.tar.gz
-  sha256: f8ef9a1937764eb7ea81daf8e09f18371cfa7d650ea87cd4ace12c3d1fbaf2df
+  sha256: c808b0f84a5499c418dc82d69999881e2d132ff8ff4445fc2a71f5bf4d30cd4b
 
 build:
   entry_points:
@@ -22,6 +22,7 @@ requirements:
     - setuptools
     - pip
   run:
+    - typing_extensions
     - python >=3.8
     - boto3
     - botocore
